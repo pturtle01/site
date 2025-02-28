@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Trainer - Transforme seu Corpo</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        header {
+            background: #333;
+            color: #fff;
+            padding: 20px;
+        }
+        .btn {
+            display: inline-block;
+            background: #ff6b6b;
+            color: #fff;
+            padding: 10px 20px;
+            text-decoration: none;
+            margin-top: 10px;
+            border-radius: 5px;
+        }
+        section {
+            padding: 20px;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        form input, form textarea, form button {
+            display: block;
+            width: 100%;
+            margin: 10px 0;
+            padding: 10px;
+        }
+        form button {
+            background: #ff6b6b;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+        @media (min-width: 768px) {
+            body {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            section {
+                width: 50%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Transforme seu Corpo com Treinos Personalizados</h1>
+        <p>Treinamento eficiente para alcançar seus objetivos</p>
+        <a href="#contato" class="btn">Agende uma Consulta</a>
+    </header>
+    
+    <section id="sobre">
+        <h2>Sobre o Personal Trainer</h2>
+        <p>Especialista certificado em treinos personalizados, emagrecimento e ganho de massa muscular.</p>
+    </section>
+
+    <section id="servicos">
+        <h2>Serviços Oferecidos</h2>
+        <ul>
+            <li>Treino Presencial</li>
+            <li>Treino Online</li>
+            <li>Consultoria Nutricional</li>
+        </ul>
+    </section>
+
+    <section id="beneficios">
+        <h2>Vantagens</h2>
+        <p>Planos personalizados, acompanhamento constante e resultados garantidos.</p>
+    </section>
+
+    <section id="contato">
+        <h2>Entre em Contato</h2>
+        <form>
+            <input type="text" name="nome" placeholder="Seu Nome" required>
+            <input type="email" name="email" placeholder="Seu E-mail" required>
+            <input type="tel" name="telefone" placeholder="Seu Telefone" required>
+            <textarea name="mensagem" placeholder="Qual seu objetivo fitness?" required></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+</body>
+</html>
